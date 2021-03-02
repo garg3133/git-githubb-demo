@@ -1,0 +1,7 @@
+{
+    "issue_assign": {
+        "claim": ["claim"],
+        "abandon": ["abandon", "unclaim", "abort"],
+        "max_issue_assignees": 1
+    }
+}
