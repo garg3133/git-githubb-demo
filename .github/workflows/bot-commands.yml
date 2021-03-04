@@ -1,4 +1,4 @@
-name: 'Claim issue'
+name: 'Bot Commands'
 
 on:
   issue_comment:
@@ -8,8 +8,9 @@ jobs:
   assign-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Assign the issue'
-        uses: garg3133/issue-claimer-action/bot-commands@actions_in_subdirectories
+      - name: 'Handle Bot Commands'
+        uses: garg3133/issue-claimer-action/bot-commands@yaml-config
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           config-file-path: .github/config/bot-commands.json
+          templates-dir-path: .github/config/templates
