@@ -1,0 +1,17 @@
+name: 'Area Labels'
+
+on:
+  issues:
+    types: [labeled, unlabeled]
+  pull_request_target:
+    types: [labeled, unlabeled]
+
+jobs:
+  notify-area-teams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Notify Teams'
+        uses: garg3133/issue-claimer-action/area-labels@area-labels
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          config-file-path: .github/config/area-labels-config.yaml

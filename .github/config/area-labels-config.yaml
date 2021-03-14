@@ -1,0 +1,14 @@
+# Config for area-labels action.
+
+# A dictionary matching labels (specified as keys) to
+# team slugs (specified as values).
+area_labels:
+  "area: api": "server-api"
+  "area: authentication": "server-authentication"
+  "area: bots": "server-bots"
+  "area: documentation (api and integrations)": "server-api"
+
+# Whether or not to notify the teams when a new pull
+# request is opened and linked to an area-labeled
+# issue.
+notify_about_linked_pull_request: true
