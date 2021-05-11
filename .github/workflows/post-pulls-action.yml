@@ -1,0 +1,15 @@
+name: Post Pulls Action
+
+on:
+  workflow_run:
+    workflows: ["Pulls Action"]
+    types: completed
+
+jobs:
+  post-pulls-action-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run run run
+        uses: garg3133/zulipbot-action/pulls-action@pulls-action
+        with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
