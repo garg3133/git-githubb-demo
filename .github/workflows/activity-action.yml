@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Activity Action'
-        uses: garg3133/issue-claimer-action/activity-action@activity-action
+        uses: garg3133/zulipbot-action/activity-action@integrate-activity-action
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           # Label to mark the issue as assigned.
