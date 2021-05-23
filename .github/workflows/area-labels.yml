@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Notify Teams'
-        uses: garg3133/issue-claimer-action/area-labels@area-labels
+        uses: garg3133/zulipbot-action/area-labels-action@integrate-area-labels-action
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           config-file-path: .github/config/area-labels-config.yaml
