@@ -2,7 +2,7 @@ name: 'Activity Action'
 
 on:
   schedule:
-    - cron: '0 0/1 * * *'
+    - cron: '0 0/12 * * *'
 
 jobs:
   activity-action:
