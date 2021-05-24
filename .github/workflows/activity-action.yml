@@ -12,6 +12,7 @@ jobs:
         uses: garg3133/zulipbot-action/activity-action@integrate-activity-action
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          templates-dir-path: .github/config/templates
           # Label to mark the issue as assigned.
           issue_assigned_label: "in progress"
           # Label to prevent an issue from being checked by
