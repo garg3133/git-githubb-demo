@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pulls Action
-        uses: garg3133/zulipbot-action/pulls-action@pulls-action
+        uses: garg3133/zulipbot-action/pulls-action@main
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
           config-file-path: .github/config/pulls-action-config.yaml
@@ -20,3 +20,4 @@ jobs:
         with:
           name: pull_artifact
           path: artifact.json
+          retention-days: 1

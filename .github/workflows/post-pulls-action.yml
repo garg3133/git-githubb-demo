@@ -8,8 +8,11 @@ on:
 jobs:
   post-pulls-action-run:
     runs-on: ubuntu-latest
+    if: >
+      ${{ github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - name: run run run
-        uses: garg3133/zulipbot-action/pulls-action@pulls-action
+      - name: Post pulls-action work
+        uses: garg3133/zulipbot-action/pulls-action@main
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
