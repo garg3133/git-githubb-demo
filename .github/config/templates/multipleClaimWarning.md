@@ -2,4 +2,4 @@ Hello @{commenter}, it looks like someone has already claimed this issue! Since 
 
 We look forward to your valuable contributions!
 
-(This is the custom user template).
+(This is a custom template.)
