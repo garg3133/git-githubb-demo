@@ -64,12 +64,8 @@ claim:
 #   false: Don't use this command;
 #   Provide config to use;
 labels:
-
-  # Allow non-authors of issue/PR to change labels.
-  # @types:
-  #   true: allow all;
-  #   false: allow author only;
-  #   ["garg3133",..]: allow users mentioned in the list,
-  #   identified by their usernames;
-  # @default: false
-  allow_non_authors: true
+  full_permission:
+    to: ["author", "member"]
+  restricted_permission:
+    to: ["@priyansh3133"]
+    allowed_labels: ["bug"]
