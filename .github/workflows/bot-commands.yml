@@ -12,5 +12,5 @@ jobs:
         uses: garg3133/zulipbot-action/commands-action@commands-action
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
-          config-file-path: .github/config/commands-action.yaml
+          config-file-path: .github/config/commands-action.yml
           templates-dir-path: .github/config/templates
