@@ -1,0 +1,8 @@
+assign:
+  max_assignees: 1
+  new_contributors:
+    assign_only_if:
+      all_labels_absent:
+        - hard
+        - difficult
+    max_issue_claims: 1
