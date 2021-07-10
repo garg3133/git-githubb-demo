@@ -6,3 +6,7 @@ assign:
         - hard
         - difficult
     max_issue_claims: 1
+label:
+  restricted_permission:
+    to: ["all"]
+    allowed_labels: ["hard", "good first issue"]
