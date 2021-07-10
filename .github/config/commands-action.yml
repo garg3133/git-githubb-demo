@@ -5,6 +5,9 @@ assign:
       all_labels_absent:
         - hard
         - difficult
+      any_label_present:
+        - good first issue
+        - help wanted
     max_issue_claims: 1
 label:
   restricted_permission:
